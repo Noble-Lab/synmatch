@@ -7,7 +7,7 @@ from coopraiz import *
 # --------------------------------------------------------------------------- #
 
 def neighborhood_overlap_Coopraiz(match, match_reverse, d1, d2):
-	h1, h2, answer = {}, {}, {}
+	h1, h2, answer, ncells, cells = {}, {}, {}, len(d1), list(range(len(d1)))
 	
 	# 1. Do it first for each cell i in data1
 	for i in cells:

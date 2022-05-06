@@ -327,7 +327,7 @@ def match_RECURSIVELY(a1, a2, bname):
 	# 1. If not cluster the cells into meta-cells
 	
 	# Do Equal-Size KMeans clustering
-	nclust = 5
+	nclust = 40
 	h_assign1 = entry_EQKM(a1, int(ncells1/nclust))
 	h_assign2 = entry_EQKM(a2, int(ncells2/nclust))
 	
@@ -468,7 +468,7 @@ def read_user_inputs():
 	
 	clean_up()
 	
-	print(f"Synmatch done.\n")
+	print(f"\nSynmatch done.\n")
 
 
 
